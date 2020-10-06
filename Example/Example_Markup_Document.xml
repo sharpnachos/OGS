@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<webstore>
+
+    <product category="furniture">
+        <name>Coffee Table</name>
+        <zipcode>60142</zipcode>
+        <price>49.99</price>
+        <description>
+            I have had this coffee table for 5 years but I am moving to a smaller apartment and it will not fit. Great table looks like new!
+        </description>
+        <condition>Slightly Used</condition>
+    </product>
+
+    <product category="electronics">
+        <name>32" Samsung TV</name>
+        <zipcode>60142</zipcode>
+        <price>69.99</price>
+        <description>
+            Only had this TV for 3 months before my girlfriend got me a 42" for my birthday. Works great!
+        </description>
+        <condition>Slightly Used</condition>
+    </product>
+
+    <product category="clothing">
+        <name>Nike Air Jordan 1 Breds (Deadstock)</name>
+        <zipcode>60142</zipcode>
+        <price>449.99</price>
+        <description>
+            DEADSTOCK NEVER WORD AJ1 BREDS. Hit me up with real offers only. I will ignore all offers under $400!!!
+        </description>
+        <condition>New</condition>
+    </product>
+    
+</webstore>

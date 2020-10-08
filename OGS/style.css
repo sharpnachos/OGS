@@ -1,0 +1,52 @@
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+. navbar{
+  box-sizing: content-box;
+}
+.top-container {
+  background-color: blue;
+  position: relative;
+  padding-top: 25px;
+}
+
+.topnav {
+  background-color: #black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.bottom-container {
+  background-color:white;
+  padding: 30px 0 20px;
+}

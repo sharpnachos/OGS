@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: blue;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contactnav-bar{
+  display:flex;
+  justify-content: space-evenly;
+  list-style-type:none;
+
+}
+.contactnav-bar a {
+  padding-top: 0px;
+  /* padding: 10px 5px; */
+  text-decoration:none;
+  list-style-type:none;
+  font-family:'August Script Bold Free';
+  font-size: 25px;
+  color: black;
+  margin:0px;
+  display:block;
+}
+.contactnav-bar a:hover{
+  color: blue;
+}
+
+.copyright {
+  color: #white;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.bottom-container {
+  background-color: black;
+  padding: 50px 0 20px;
+}
+
+</style>
+</head>
+<nav>
+  <div id="contactnav-bar-container">
+    <ul class="contactnav-bar">
+      <li><a href="index.html"
+        class="index.html">Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Questions? Let us know!</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images/city.png" style="width:105%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Your message.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" href="mailto:nehapatel083@gmail.com">
+
+      </form>
+    </div>
+  </div>
+</div>
+
+  <div class="bottom-container">
+  </div>
+</body>
+</html>

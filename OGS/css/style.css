@@ -27,6 +27,7 @@
 #main-header h1{
   float: left;
   color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 14px 16px;
   font-size: 30px;
@@ -35,6 +36,7 @@
 #main-header input{
   float: left;
   color: #f2f2f2;
+  padding-top: 5px;
   font-size: 25px;
   position: center;
   margin: 10px;
@@ -46,7 +48,7 @@
 }
 
 /* This doesn't work */
-#main-header #profile a.hover{
+#main-header a:hover{
   color: gray;
 }
 
@@ -66,17 +68,53 @@ body{
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   color: #818181;
   display: block;
 }
 
-/*Doesn't look good yet*/
+.search-the-pile{
+  background-color: white;
+  float:right;
+  width: 85%;
+  height: 40%;
+  text-align: left;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
 /*.sidenav li:nth-child(even){
   text-align: right;
 }*/
 
-/* Can't get hover to work for some reason */
-.sidenav a.hover{
+.sidenav a:hover{
   color:white;
 }

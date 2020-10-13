@@ -79,7 +79,7 @@ body{
 }
 
 /*.sidenav li:nth-child(even){
-  text-align: right;
+  text-align: right; test
 }*/
 
 .sidenav a:hover{

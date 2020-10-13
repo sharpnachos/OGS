@@ -68,13 +68,13 @@ aside li{
 }
 
 .box1{
+    /*Probably needs to be resized*/
     background: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
     border-radius: 10px;
-    /*This doesn't work need to fix.*/
-    /*align-items: start;*/
+    justify-self: start;
 }
 
 .box2{
@@ -83,13 +83,13 @@ aside li{
 }
 
 .box3{
+    /*Probably needs to be resized*/
     background: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
     border-radius: 10px;
-    /*This doesn't work need to fix.*/
-    /*align-items: start;*/
+    justify-self: start;
 }
 
 .box4{

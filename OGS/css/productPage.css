@@ -1,0 +1,123 @@
+/*EVERYTHING*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*Container Stuff*/
+  .container{
+    margin:auto;
+    overflow: hidden;
+  }
+  
+  /*Header Stuff*/
+  #main-header{
+    background-color: black;
+    color:#fff;
+    overflow: hidden;
+    border-bottom: 5px solid white;
+  }
+  
+  #main-header #profile{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 30px;
+  }
+  
+  #main-header h1{
+    float: left;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 30px;
+  }
+  
+  #main-header input{
+    float: left;
+    color: #f2f2f2;
+    padding-top: 5px;
+    font-size: 25px;
+    position: center;
+    margin: 10px;
+  }
+  
+  #main-header a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  #main-header a:hover{
+    text-shadow: 0 0 5px white, 0 0 7px white;
+  }
+  
+  /*Body Stuff*/
+  body{
+    background-color: #424242;
+  }
+
+.product-info{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 30px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.product-info h1{
+  font-size: 100px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-info h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-info h3{
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-info h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-image{
+  max-width: 80%;
+  display: grid;
+  padding: 10px;
+  float: left;
+  grid-template-columns: 200%;
+}
+
+.grid-item{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2px;
+  padding: 10px;
+  margin-left: 2%;
+  margin-top: 10px;
+}

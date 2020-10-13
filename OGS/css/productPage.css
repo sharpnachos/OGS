@@ -115,7 +115,8 @@ img {
 .grid-container {
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
-  grid-template-columns: 49% 49%;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: 49% 49%;*/
   grid-gap: 2px;
   padding: 10px;
   margin-left: 2%;

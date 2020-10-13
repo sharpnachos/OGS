@@ -96,7 +96,7 @@ body{
   height: 40%;
   text-align: left;
   border: 7px #424242 solid;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /*Card Stuff*/
@@ -142,7 +142,7 @@ body{
   border-top: 7px #424242 solid;
   border-left: 7px #424242 solid;
   border-right: 7px #424242 solid;
-  border-radius: 5px;
+  border-radius: 10px;
   display: grid;
   grid-column-start:1;
   grid-column-end:1;

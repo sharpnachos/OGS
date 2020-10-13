@@ -1,0 +1,49 @@
+/*EVERYTHING*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body Stuff*/
+body{
+    background-color: #424242;
+}
+  
+.wrapper{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 4fr 1fr 6fr;
+}
+  
+.wrapper div{
+    background: black;
+    color: white;
+    padding: 1em;
+    border: 3px gray solid;
+}
+
+.wrapper div:nth-child(odd){
+    background: white;
+    color: black;
+}
+  
+.box1{
+    grid-column:1/3;
+    grid-row: 1;
+}
+  
+.box2{
+    grid-row: 2/6;
+    grid-column: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .box2{
+        display:none;
+    }
+}

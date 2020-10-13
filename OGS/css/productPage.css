@@ -56,4 +56,70 @@
   /*Body Stuff*/
   body{
     background-color: #424242;
+<<<<<<< HEAD
   }
+
+.product-info{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 30px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.product-info h1{
+  font-size: 100px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-info h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-info h3{
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-info h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-image{
+  max-width: 80%;
+  display: grid;
+  padding: 10px;
+  float: left;
+  grid-template-columns: 200%;
+}
+
+.grid-item{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2px;
+  padding: 10px;
+  margin-left: 2%;
+  margin-top: 10px;
+}
+

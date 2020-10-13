@@ -42,6 +42,7 @@ aside{
     width: 200px;
     height: 100%;
     float:left;
+    position: fixed;
     background: black;
 }
 aside a{
@@ -112,9 +113,33 @@ aside li{
     margin: 5px;
 }
 
+.FSProfilePic{
+    float: left;
+    margin: 5px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
 .innerBox2 h1{
+    float: left;
+    margin-top: 8px;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 40px;
+}
+
+.FSProducts{
+    display: grid;
+    float:left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.FSProducts img{
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .wrapperSTP{
@@ -146,6 +171,13 @@ aside li{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.innerBox4 img{
+    margin: 5px;
+    width: 200px;
+    max-height: 300px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 700px) {

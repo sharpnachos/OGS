@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /*Body Stuff*/
 body{
     background-color: #424242;
@@ -127,6 +132,11 @@ aside li{
     margin-left: 10px;
     margin-right: 10px;
     font-size: 40px;
+    max-height:50px;
+}
+
+.innerBox2 a:hover{
+    text-shadow: 0 0 5px white, 0 0 7px white;
 }
 
 .FSProducts{
@@ -135,6 +145,7 @@ aside li{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
+    margin-bottom: 10px;
 }
 
 .FSProducts img{
@@ -162,6 +173,10 @@ aside li{
     margin-right: 10px;
 }
 
+.innerBox4 a:hover{
+    text-shadow: 0 0 5px white, 0 0 7px white;
+}
+
 .innerBox4 h2{
     margin-left: 10px;
     margin-right: 10px;
@@ -176,7 +191,7 @@ aside li{
 .innerBox4 img{
     margin: 5px;
     width: 200px;
-    max-height: 300px;
+    max-height: 200px;
     border-radius: 10px;
 }
 

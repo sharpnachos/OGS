@@ -1,164 +1,224 @@
 /*EVERYTHING*/
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*Container Stuff*/
-.container{
-  margin:auto;
-  overflow: hidden;
-}
-
-/*Header Stuff*/
-#main-header{
-  background-color: black;
-  color:#fff;
-  overflow: hidden;
-  border-bottom: 5px solid white;
-}
-
-#main-header #profile{
-  text-align: center;
-  font-size: 30px;
-}
-
-#main-header h1{
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 30px;
-}
-
-#main-header input{
-  color: #f2f2f2;
-  font-size: 25px;
-}
-
-#main-header a{
-  text-decoration: none;
-  color:white;
-}
-
-#main-header a:hover{
-  text-shadow: 0 0 5px white, 0 0 7px white;
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /*Body Stuff*/
 body{
-  background-color: #424242;
+    background-color: #262626;
+}
+
+header{
+    height:75px;
+    border-bottom: white 5px solid;
+    background-color: black;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+    text-shadow: 0 0 5px white, 0 0 7px white;
+}
+#logo{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 20px 15px 10px 15px;
+}
+
+#profile{
+    float:right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 20px 15px 10px 15px;
+}
+
+aside{
+    width: 200px;
+    height: 100%;
+    float:left;
+    position: relative;
+    left: 0;
+    top: 75;
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+aside a{
+    text-decoration: none;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+aside a:hover{
+    color:white;
+    text-shadow: 0 0 5px white, 0 0 7px white;
+}
+aside li{
+    padding: 10px;
 }
 
 .wrapper{
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 100px 1fr 2fr 1fr 3fr;
-}
-
-.wrapper div{
-  padding: 1em;
+    display: grid;
+    margin-left:205px;
+    margin-top: 5px;
+    margin-right: 5px;
+    grid-template-rows: 1fr 4fr 1fr 6fr;
+    grid-gap:10px;
 }
 
 .box1{
-  grid-column:1/3;
-  grid-row: 1;
+    /*Probably needs to be resized*/
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    border-radius: 10px;
+    justify-self: start;
 }
 
 .box2{
-  grid-row: 2/6;
-  grid-column: 1;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .box3{
-  grid-column: 2;
-  grid-row: 3;
-}
-/*Sidenav Stuff*/
-.sidenav {
-  background-color: black;
-  height: 100%;
-  overflow: auto;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+    /*Probably needs to be resized*/
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    border-radius: 10px;
+    justify-self: start;
 }
 
-/*.sidenav li:nth-child(even){
-  text-align: right; test
-}*/
-
-.sidenav a:hover{
-  color:white;
-  text-shadow: 0 0 5px white, 0 0 7px white;
+.box4{
+    background-color: black;
+    border-radius: 10px;
 }
 
-/*Search the Pile stuff*/
-.search-the-pile{
-  background-color: black;
-  text-align: left;
-  border-radius: 10px;
+.wrapperFS{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 5px;
 }
 
-/*Card Stuff*/
-.card {
-  min-width: 300px;
-  color: white;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  float: right;
+.innerBox2{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #424242;
+    border-radius: 10px;
+    margin: 5px;
 }
 
-.card img{
-  max-width: 200px;
-  max-height: 200px;
+.FSProfilePic{
+    float: left;
+    margin: 5px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+.innerBox2 h1{
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    max-height:50px;
 }
 
-.card button:hover {
-  opacity: 0.7;
+.innerBox2 a:hover{
+    text-shadow: 0 0 5px white, 0 0 7px white;
 }
 
-/*Featured Sellers Stuff*/
-.featured-sellers{
-  background-color: black;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  border-radius: 10px;
+.FSProducts{
+    display: grid;
+    float:left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 10px;
 }
 
-.featured-sellers img{
-  max-width:50px;
-  max-height:50px;
+.FSProducts div{
+    border: black 20px solid;
 }
 
-/*Reactive Stuff*/
+.FSProducts img{
+    margin-top: 15px;
+    max-width: 75px;
+    max-height: 75px;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.wrapperSTP{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 5px;
+}
+
+.innerBox4{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #424242;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.innerBox4 h1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.innerBox4 a:hover{
+    text-shadow: 0 0 5px white, 0 0 7px white;
+}
+
+.innerBox4 h2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.innerBox4 h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.innerBox4 img{
+    margin: 5px;
+    width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
 @media screen and (max-width: 700px) {
-  .sidenav {
-    display: none;
-  }
-  .search-the-pile{
-    margin-left: 0;
-  }
-  .featured-sellers{
-    margin-left: 0;
-  }
+    aside{
+        display: none;
+    }
+    .wrapper{
+        margin-left: 5px;
+    }
 }

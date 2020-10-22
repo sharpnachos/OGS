@@ -68,12 +68,12 @@ aside li{
     padding: 10px;
 }
 
-.wrapper{
+.wrapperCat{
     display: grid;
     margin-left:205px;
     margin-top: 5px;
     margin-right: 5px;
-    grid-template-rows: 1fr 4fr 1fr 6fr;
+    grid-template-rows: 60px 1fr;
     grid-gap:10px;
 }
 
@@ -87,92 +87,13 @@ aside li{
     justify-self: start;
 }
 
-.box2{
-    background-color: black;
-    border-radius: 10px;
-}
-
-.box3{
-    /*Probably needs to be resized*/
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
-    border-radius: 10px;
-    justify-self: start;
-}
-
-.box4{
-    background-color: black;
-    border-radius: 10px;
-}
-
-.wrapperFS{
+.wrapperProducts{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 5px;
-}
-
-.innerBox2{
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #424242;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.FSProfilePic{
-    float: left;
-    margin: 5px;
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 50%;
-}
-
-.innerBox2 h1{
-    float: left;
-    margin-top: 8px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 40px;
-    max-height:50px;
-}
-
-.innerBox2 a:hover{
-    text-shadow: 0 0 5px white, 0 0 7px white;
-}
-
-.FSProducts{
-    display: grid;
-    float:left;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1em;
-    margin-bottom: 10px;
-}
-
-.FSProducts div{
-    border: black 20px solid;
-}
-
-.FSProducts img{
-    margin-top: 15px;
-    max-width: 75px;
-    max-height: 75px;
-    object-fit: cover;
-    justify-self: center;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-}
-
-.wrapperSTP{
-    display: grid;
+    margin-top: 5px;
+    margin-right: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 5px;
+    grid-gap:10px;
 }
 
 .innerBox4{
@@ -212,13 +133,4 @@ aside li{
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-}
-
-@media screen and (max-width: 700px) {
-    aside{
-        display: none;
-    }
-    .wrapper{
-        margin-left: 5px;
-    }
 }

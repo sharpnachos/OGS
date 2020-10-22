@@ -1,90 +1,110 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Online Garage Sale</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-<body>
-    <header id="main-header">
-        <div class="container">
-            <h1><a href="#">OGS</a></h1>
-            <!-- <img src="images/logo.png"-->
-            <input type="text" placeholder="Search">
-            <h1 id="profile"><a href="#">Profile</a></h1>
-        </div>
-    </header>
-
-    <aside class="sidenav">
-        <!-- <h1>Categories</h1> -->
-        <div class="container">
+    <body>
+        <header>
+            <h1 id="logo"><a href="index.html">OGS</a></h1>
+            <h2 id="profile"><a href="profile.html">Profile</a></h2>
+        </header>
+        <aside>
             <ul>
-                <li><a href="#">Men's Clothing</a></li>
-                <li><a href="#">Women's Clothing</a></li>
-                <li><a href="#">Children's Clothing</a></li>
-                <li><a href="#">Infant Clothing</a></li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Appliances</a></li>
-                <li><a href="#">Furnitures</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Outdoor</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="category.html">Category</a></li>
             </ul>
+        </aside>
+        <div class="wrapper">
+            <div class="box1">
+                <h1>Featured Sellers</h1>
+            </div>
+            <div class="box2">
+                <div class="wrapperFS">
+                    <div class="innerBox2">
+                        <img class="FSProfilePic" src="images/default-profile-pic.png">
+                        <h1><a href="profile.html">Username</a></h1>
+                        <div class="FSProducts">
+                            <img src="images/breds.jpg">
+                            <img src="images/couch.jpg">
+                            <img src="images/toaster.jpg">
+                            <img src="images/city.png">
+                        </div>
+                    </div>
+                    <div class="innerBox2">
+                        <img class="FSProfilePic" src="images/default-profile-pic.png">
+                        <h1><a href="profile.html">Username</a></h1>
+                        <div class="FSProducts">
+                            <img src="images/breds.jpg">
+                            <img src="images/couch.jpg">
+                            <img src="images/toaster.jpg">
+                            <img src="images/city.png">
+                        </div>
+                    </div>
+                    <div class="innerBox2">
+                        <img class="FSProfilePic" src="images/default-profile-pic.png">
+                        <h1><a href="profile.html">Username</a></h1>
+                        <div class="FSProducts">
+                            <img src="images/breds.jpg">
+                            <img src="images/couch.jpg">
+                            <img src="images/toaster.jpg">
+                            <img src="images/city.png">
+                        </div>
+                    </div>
+                    <div class="innerBox2">
+                        <img class="FSProfilePic" src="images/default-profile-pic.png">
+                        <h1><a href="profile.html">Username</a></h1>
+                        <div class="FSProducts">
+                            <img src="images/breds.jpg">
+                            <img src="images/couch.jpg">
+                            <img src="images/toaster.jpg">
+                            <img src="images/city.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <h1>Search the Pile</h1>
+            </div>
+            <div class="box4">
+                <div class="wrapperSTP">
+                    <div class="innerBox4">
+                        <img src="images/breds.jpg">
+                        <h1><a href="defaultProductPage.html">AJ1 Breds (Deadstock)</a></h1>
+                        <h2>$400</h2>
+                        <h3><a href="profile.html">Thomas Walsh</a></h3>
+                    </div>
+                    <div class="innerBox4">
+                        <img src="images/couch.jpg">
+                        <h1><a href="defaultProductPage.html">Couch</a></h1>
+                        <h2>$100</h2>
+                        <h3><a href="profile.html">Evan Konnerman</a></h3>
+                    </div>
+                    <div class="innerBox4">
+                        <img src="images/toaster.jpg">
+                        <h1><a href="defaultProductPage.html">Toaster</a></h1>
+                        <h2>$30</h2>
+                        <h3><a href="profile.html">Neha Patel</a></h3>
+                    </div>
+                    <div class="innerBox4">
+                        <img src="images/city.png">
+                        <h1><a href="defaultProductPage.html">The Entire City of Chicago</a></h1>
+                        <h2>$75</h2>
+                        <h3<a href="profile.html">Lori Lightfoot</a></h3>
+                    </div>
+                    <div class="innerBox4">
+                        <img src="images/default-profile-pic.png">
+                        <h1><a href="defaultProductPage.html">Framed Artwork</a></h1>
+                        <h2>$10</h2>
+                        <h3><a href="profile.html">Prof. Hayward</a></h3>
+                    </div>
+                </div>
+            </div>
         </div>
-    </aside>
-    <section class="featured-sellers">
-        <div class="container">
-            <h1>Neha</h1>
-            <img src="images/toaster.jpg">
-            <img>
-            <img>
-            <img>
-
-            <h1>Thomas</h1>
-            <img src="images/breds.jpg">
-            <img>
-            <img>
-            <img>
-            
-            
-            <h1>Evan</h1>
-            <img src="images/couch.jpg">
-            <img>
-            <img>
-            <img>
-        </div>
-    </section>
-    <section class="search-the-pile">
-        <div class="container">
-        <!--Bad Practice-->
-        <table>
-        <td>
-        <div class="card">
-            <img src="images/toaster.jpg">
-            <h1>Toaster</h1>
-            <h3>Neha</h3>
-            <h2>$30</h2>
-            <p><button>Add to Cart</button></p>
-        </div>
-        </td>
-        <td>
-        <div class="card">
-            <img src="images/couch.jpg">
-            <h1>Couch</h1>
-            <h3>Evan</h3>
-            <h2>$100</h2>
-            <p><button>Add to Cart</button></p>
-        </div>
-        </td>
-        <td>
-        <div class="card">
-            <img src="images/breds.jpg">
-            <h1>AJ1 Breds</h1>
-            <h3>Thomas</h3>
-            <h2>$400</h2>
-            <p><button>Add to Cart</button></p>
-        </div>
-        </td>
-        </table>
-        </div>
-    </section>
-</body>
+    </body>
 </html>

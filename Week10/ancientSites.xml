@@ -40,14 +40,15 @@
 		<name language="english">Blarney Castle</name>
 		<location>County Cork</location>
 		<country>Ireland</country>
-		<description>Blarney Castle is a medieval 
-        stronghold in Blarney, near Cork, Ireland. 
-        Though earlier fortifications were built on the 
-        same spot, the current keep was built by the 
-        MacCarthy of Muskerry dynasty, a cadet branch 
-        of the Kings of Desmond, and dates from 1446. 
-        The Blarney Stone is among the machicolations of 
-        the castle.
+		<description>
+			Blarney Castle is a medieval 
+        	stronghold in Blarney, near Cork, Ireland. 
+        	Though earlier fortifications were built on the 
+        	same spot, the current keep was built by the 
+        	MacCarthy of Muskerry dynasty, a cadet branch 
+        	of the Kings of Desmond, and dates from 1446. 
+        	The Blarney Stone is among the machicolations of 
+        	the castle.
         </description>
 		<culture>Irish</culture>
 		<history>

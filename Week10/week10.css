@@ -29,3 +29,7 @@ th, td {
     border-right: 1px solid #555;
     border-bottom: 1px solid #555;
 }
+
+image {
+    max-width: 200px;
+}

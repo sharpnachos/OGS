@@ -21,11 +21,19 @@
 			<year range="start" era="BC">3200</year>
 		</history>
 		<images>
+			<image src = "Newgrange.jpg" />
 		</images>
 		<links>
 			<overview type="general" url="https://en.wikipedia.org/wiki/Newgrange">wikipedia</overview>
 		</links>
 		<notes>
+			<note>
+				Newgrange is located 8.4 kilometres (5.2 mi) 
+				west of Drogheda in County Meath. The interpretive 
+				centre is located on the south bank of the river 
+				and Newgrange is located on the north side of the 
+				river. Access is only from the interpretive centre.
+			</note>
 		</notes>
 	</site>
     	<site>
@@ -48,6 +56,7 @@
 			<year range="start" era="AD">1210</year>
 		</history>
 		<images>
+			<image src = "Blarney_castle.jpg" />
 		</images>
 		<links>
 			<overview type="general" url="https://en.wikipedia.org/wiki/Blarney_Castle">wikipedia</overview>
@@ -86,6 +95,7 @@
 			<year range="start" era="BC">2500</year>
 		</history>
 		<images>
+			<image src = "Altar_wedge.jpg" />
 		</images>
 		<links>
 			<overview type="general" url="https://en.wikipedia.org/wiki/Altar_Wedge_Tomb">wikipedia</overview>

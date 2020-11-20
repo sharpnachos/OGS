@@ -21,7 +21,7 @@
 			<year range="start" era="BC">3200</year>
 		</history>
 		<images>
-			<image src = "Newgrange.jpg" />
+			<image size="thumb" type="jpg" url="Newgrange.jpg">thumbnail</image>
 		</images>
 		<links>
 			<overview type="general" url="https://en.wikipedia.org/wiki/Newgrange">wikipedia</overview>
@@ -57,7 +57,7 @@
 			<year range="start" era="AD">1210</year>
 		</history>
 		<images>
-			<image src = "Blarney_castle.jpg" />
+			<image size="thumb" type="jpg" url="Blarney_castle.jpeg">thumbnail</image>
 		</images>
 		<links>
 			<overview type="general" url="https://en.wikipedia.org/wiki/Blarney_Castle">wikipedia</overview>
@@ -96,7 +96,7 @@
 			<year range="start" era="BC">2500</year>
 		</history>
 		<images>
-			<image src = "Altar_wedge.jpg" />
+			<image size="thumb" type="jpg" url="Altar_wedge.jpeg">thumbnail</image>
 		</images>
 		<links>
 			<overview type="general" url="https://en.wikipedia.org/wiki/Altar_Wedge_Tomb">wikipedia</overview>

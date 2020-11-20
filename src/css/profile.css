@@ -43,6 +43,19 @@ header a:hover{
     padding: 20px 15px 10px 15px;
 }
 
+#addlisting{
+    margin-top: 15px;
+    margin-right: 5px;
+    background-color: #424242;
+    float:right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: #424242;
+    border-radius: 10px;
+}
+
 .wrapper{
     display: grid;
     margin-top: 5px;

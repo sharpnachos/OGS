@@ -1,6 +1,4 @@
-<?php include 'database.php'; ?>
-
-<?php
+<?php include 'database.php';
 
 // create a variable
 $title=$_POST['title'];
@@ -20,3 +18,5 @@ mysqli_query($connect,"INSERT INTO products (title, desc, category, price, user)
 	echo "Product NOT Added<br />";
 	echo mysqli_error ($connect);
 }
+
+?>

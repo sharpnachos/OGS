@@ -1,3 +1,25 @@
+<!--<?php 
+
+	include('login_info/config.php');
+
+	// write query for all pizzas
+	$sql = 'SELECT title, price, name, image FROM additem ORDER BY created_at';
+
+	// get the result set (set of rows)
+	$result = mysqli_query($conn, $sql);
+
+	// fetch the resulting rows as an array
+	$items = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	// free the $result from memory (good practise)
+	mysqli_free_result($result);
+
+	// close connection
+	mysqli_close($conn);
+
+
+?>-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,88 +57,24 @@
         </aside>
         <div class="wrapper">
             <div class="box1">
-                <h1>Featured Sellers</h1>
-            </div>
-            <div class="box2">
-                <div class="wrapperFS">
-                    <div class="innerBox2">
-                        <img class="FSProfilePic" src="images/default-profile-pic.png">
-                        <h1><a href="profile.html">Username</a></h1>
-                        <div class="FSProducts">
-                            <img src="images/breds.jpg">
-                            <img src="images/couch.jpg">
-                            <img src="images/toaster.jpg">
-                            <img src="images/city.png">
-                        </div>
-                    </div>
-                    <div class="innerBox2">
-                        <img class="FSProfilePic" src="images/default-profile-pic.png">
-                        <h1><a href="profile.html">Username</a></h1>
-                        <div class="FSProducts">
-                            <img src="images/breds.jpg">
-                            <img src="images/couch.jpg">
-                            <img src="images/toaster.jpg">
-                            <img src="images/city.png">
-                        </div>
-                    </div>
-                    <div class="innerBox2">
-                        <img class="FSProfilePic" src="images/default-profile-pic.png">
-                        <h1><a href="profile.html">Username</a></h1>
-                        <div class="FSProducts">
-                            <img src="images/breds.jpg">
-                            <img src="images/couch.jpg">
-                            <img src="images/toaster.jpg">
-                            <img src="images/city.png">
-                        </div>
-                    </div>
-                    <div class="innerBox2">
-                        <img class="FSProfilePic" src="images/default-profile-pic.png">
-                        <h1><a href="profile.html">Username</a></h1>
-                        <div class="FSProducts">
-                            <img src="images/breds.jpg">
-                            <img src="images/couch.jpg">
-                            <img src="images/toaster.jpg">
-                            <img src="images/city.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box3">
                 <h1>Search the Pile</h1>
             </div>
-            <div class="box4">
-                <div class="wrapperSTP">
-                    <div class="innerBox4">
-                        <img src="images/breds.jpg">
-                        <h1><a href="defaultProductPage.html">AJ1 Breds (Deadstock)</a></h1>
-                        <h2>$400</h2>
-                        <h3><a href="profile.html">Thomas Walsh</a></h3>
-                    </div>
-                    <div class="innerBox4">
-                        <img src="images/couch.jpg">
-                        <h1><a href="defaultProductPage.html">Couch</a></h1>
-                        <h2>$100</h2>
-                        <h3><a href="profile.html">Evan Konnerman</a></h3>
-                    </div>
-                    <div class="innerBox4">
-                        <img src="images/toaster.jpg">
-                        <h1><a href="defaultProductPage.html">Toaster</a></h1>
-                        <h2>$30</h2>
-                        <h3><a href="profile.html">Neha Patel</a></h3>
-                    </div>
-                    <div class="innerBox4">
-                        <img src="images/city.png">
-                        <h1><a href="defaultProductPage.html">The Entire City of Chicago</a></h1>
-                        <h2>$75</h2>
-                        <h3<a href="profile.html">Lori Lightfoot</a></h3>
-                    </div>
-                    <div class="innerBox4">
-                        <img src="images/default-profile-pic.png">
-                        <h1><a href="defaultProductPage.html">Framed Artwork</a></h1>
-                        <h2>$10</h2>
-                        <h3><a href="profile.html">Prof. Hayward</a></h3>
-                    </div>
-                </div>
+            <div class="box2">
+                <!--<?php foreach($items as $item): ?>
+				<div class="col s6 m4">
+					<div class="card z-depth-0">
+						<div class="card-content center">
+							<h5><?php echo htmlspecialchars($item['title']); ?></h5>
+                            <h6><?php echo htmlspecialchars($item['name']); ?></h6>
+                            <h6><?php echo htmlspecialchars($item['price']); ?></h6>
+                            Some way to add image
+						</div>
+						<div class="card-action right-align">
+							<a class="brand-text" href="details.php?id=<?php echo $item['id'] ?>">more info</a>
+						</div>
+					</div>
+				</div>
+			    <?php endforeach; ?>-->
             </div>
         </div>
     </body>

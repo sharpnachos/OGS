@@ -13,9 +13,9 @@ mysqli_query($connect,"INSERT INTO products (title, desc, category, price, user)
 				
 	if(mysqli_affected_rows($connect) > 0){
 	echo "<p>Product Added</p>";
-	echo "<a href="index.html">Go Back</a>";
+	echo "<a href="index.php">Go Back</a>";
 } else {
-	echo "Product NOT Added<br />";
+	echo "Product NOT Added<br/>";
 	echo mysqli_error ($connect);
 }
 

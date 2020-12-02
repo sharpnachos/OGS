@@ -30,14 +30,14 @@ GENERATE CATEGORY PAGES -->
     </header>
     <aside>
         <ul>
-        <li><a href="category.html">Clothing</a></li>
-                <li><a href="hard_code_cat.php">Appliances</a></li>
-                <li><a href="category.html">Home</a></li>
-                <li><a href="category.html">Toys</a></li>
-                <li><a href="category.html">Electronics</a></li>
-                <li><a href="category.html">Media</a></li>
-                <li><a href="category.html">Seasonal</a></li>
-                <li><a href="category.html">Misc.</a>></a></li>
+            <li><a href="category.html">Clothing</a></li>
+            <li><a href="hard_code_cat.php">Appliances</a></li>
+            <li><a href="category.html">Home</a></li>
+            <li><a href="category.html">Toys</a></li>
+            <li><a href="category.html">Electronics</a></li>
+            <li><a href="category.html">Media</a></li>
+            <li><a href="category.html">Seasonal</a></li>
+            <li><a href="category.html">Misc.</a>></a></li>
         </ul>
     </aside>
     <main>

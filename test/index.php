@@ -3,12 +3,11 @@
 	// write query for all pizzas
 	$sql = 'SELECT title, price, user, image FROM additem ORDER BY created_at';
     // get the result set (set of rows)
-
-	    $result = mysqli_query($link, $sql);
-	    // fetch the resulting rows as an array
-	    $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
-	    // free the $result from memory (good practise)
-        mysqli_free_result($result);
+	$result = mysqli_query($link, $sql);
+	// fetch the resulting rows as an array
+	$items = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	// free the $result from memory (good practise)
+    mysqli_free_result($result);
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +43,8 @@
 						<h1><a class="brand-text" href="details.php?id=<?php echo $item['id'] ?>"><?php echo htmlspecialchars($item['title']); ?></a></h1>
                         <h2><a href="profile.html"><?php echo htmlspecialchars($item['user']); ?></a></h2>
                         <h3><?php echo htmlspecialchars($item['price']); ?></h3>
-					</div>
+                    </div>
+                </div>
 			<?php endforeach; ?>
         </div>
     </body>

@@ -30,13 +30,13 @@
 
         //image stuff
         $output_dir = "upload/";/* Path for file upload */
-        $RandomNum   = time();
-        $ImageName      = str_replace(' ','-',strtolower($_FILES['image']['name'][0]));
-        $ImageType      = $_FILES['image']['type'][0];
+        $RandomNum = time();
+        $ImageName = str_replace(' ','-',strtolower($_FILES['image']['name'][0]));
+        $ImageType = $_FILES['image']['type'][0];
  
         $ImageExt = substr($ImageName, strrpos($ImageName, '.'));
-        $ImageExt       = str_replace('.','',$ImageExt);
-        $ImageName      = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
+        $ImageExt = str_replace('.','',$ImageExt);
+        $ImageName = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
         $NewImageName = $ImageName.'-'.$RandomNum.'.'.$ImageExt;
         $ret[$NewImageName]= $output_dir.$NewImageName;
         /* Try to create the directory if it does not exist */
@@ -54,7 +54,6 @@
             $user = mysqli_real_escape_string($link, $_POST['user']);
             $price = mysqli_real_escape_string($link, $_POST['price']);
 
-
             //create sql
             $sql = "INSERT INTO additem(title,description,user,price,image) VALUES('$title', '$description', '$user', '$price', '$NewImageName')";
 
@@ -66,7 +65,6 @@
                 echo 'query error: ' . mysqli_error($link);
             }
         }
-
     }
  ?>
 
@@ -81,7 +79,6 @@
             <h1 id="logo"><a href="../index.php">OGS</a></h1>
             <h2 id="addlisting"><a href="add.php">Post a Listing</a></h2>
         </header>
-
         <form class = "white" action = "add.php" method = "POST">
             <label>Your Name:</label>
             <input type = "text" name = "user" value = "<?php echo htmlspecialchars($user) ?>">
@@ -102,34 +99,31 @@
             <br>
             <label>Category</label>
             <select name="category">
-                    <option value="mensclothing">Men's Clothing</option>
-                    <option value="womensclothing">Women's Clothing</option>
-                    <option value="boysclothing">Boy's Clothing</option>
-                    <option value="girlsclothing">Girl's Clothing</option>
-                    <option value="infantclothing">Infant Clothing</option>
-                    <option value="largeappliances">Large Appliances</option>
-                    <option value="smallappliances">Small Appliances</option>
-                    <option value="kitchenware">Kitchen Ware</option>
-                    <option value="homeimprovement">Home Improvement</option>
-                    <option value="homedecor">Home Decor</option>
-                    <option value="furniture">Furniture</option>
-                    <option value="toys">Toys</option>
-                    <option value="electronics">Electronics</option>
-                    <option value="media">Media (CD/DVD/Blu-Ray/Vinyl)</option>
-                    <option value="books">Books/Magazines</option>
-                    <option value="seasonal">Seasonal</option>
-                    <option value="Other">Other</option>
-                </select>
+                <option value="mensclothing">Men's Clothing</option>
+                <option value="womensclothing">Women's Clothing</option>
+                <option value="boysclothing">Boy's Clothing</option>
+                <option value="girlsclothing">Girl's Clothing</option>
+                <option value="infantclothing">Infant Clothing</option>
+                <option value="largeappliances">Large Appliances</option>
+                <option value="smallappliances">Small Appliances</option>
+                <option value="kitchenware">Kitchen Ware</option>
+                <option value="homeimprovement">Home Improvement</option>
+                <option value="homedecor">Home Decor</option>
+                <option value="furniture">Furniture</option>
+                <option value="toys">Toys</option>
+                <option value="electronics">Electronics</option>
+                <option value="media">Media (CD/DVD/Blu-Ray/Vinyl)</option>
+                <option value="books">Books/Magazines</option>
+                <option value="seasonal">Seasonal</option>
+                <option value="Other">Other</option>
+            </select>
             <div class = "red-text"><?php echo $errors['description']; ?></div>
             <br>
             <form action="add.php" method="post" enctype="multipart/form-data">
             <label>Image:</label>
             <input type="file" name="image[]" />
             <br>
-            <div>
-            <br>
             <input type="submit" name="submit" value="Submit">
         </form>
-
-
+    </body>
 </html>

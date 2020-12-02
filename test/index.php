@@ -2,12 +2,14 @@
 	include('config.php');
 	// write query for all pizzas
 	$sql = 'SELECT title, price, user, image FROM additem ORDER BY created_at';
-	// get the result set (set of rows)
-	$result = mysqli_query($link, $sql);
-	// fetch the resulting rows as an array
-	$items = mysqli_fetch_all($result, MYSQLI_ASSOC);
-	// free the $result from memory (good practise)
-	mysqli_free_result($result);
+    // get the result set (set of rows)
+    function populate($sql){
+	    $result = mysqli_query($link, $sql);
+	    // fetch the resulting rows as an array
+	    $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	    // free the $result from memory (good practise)
+        mysqli_free_result($result);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +27,25 @@
             <h2 id="profile"><a href="profile.html">Profile</a></h2>
         </header>
         <aside>
+            <?php
+                if(array_key_exists('button1', $_POST)) { 
+                    button1(); 
+                } 
+            else if(array_key_exists('button2', $_POST)) { 
+                button2(); 
+            } 
+        function button1() { 
+            echo "This is Button1 that is selected"; 
+        } 
+        function button2() { 
+            echo "This is Button2 that is selected"; 
+        } 
+    ?> 
             <ul>
                 <li><a href="category.html">Clothing</a></li>
-                <li><a href="category.html">Appliances</a></li>
+                <!--WORST CASE
+                    <li><a href="hard_code_cat.php">Appliances</a></li>-->
+                <li><input type="submit" name="insert" value="Appliances" onclick="populate()"/></li>
                 <li><a href="category.html">Home</a></li>
                 <li><a href="category.html">Toys</a></li>
                 <li><a href="category.html">Electronics</a></li>
@@ -36,7 +54,7 @@
                 <li><a href="category.html">Misc.</a>></a></li>
             </ul>
         </aside>
-        <div class="wrapper">
+        <div class="wrapperSTP">
             <?php foreach($items as $item): ?>
                 <div class="box2">
 					<div class="innerBox4">

@@ -20,10 +20,9 @@
     </head>
     <body>
         <header>
-            <h1 id="logo"><a href="index.html">OGS</a></h1>
+            <h1 id="logo"><a href="index.php">OGS</a></h1>
             <h2 id="login"><a href="login_info/welcome.php">Login/Logout</a></h2>
-            <h2 id="addlisting"><a href="Post a Listing/add.php">Post a Listing</a></h2>
-            <h2 id="profile"><a href="profile.html">Profile</a></h2>
+            <h2 id="addlisting"><a href="login_info/login.php">Post a Listing</a></h2>
         </header>
         <aside>
             <ul>

@@ -3,18 +3,18 @@
     session_start();
     include('../config.php');
 
-    $title = $description = $price = $name = $category = '';
-    $errors = array('description' =>'', 'title' => '', 'price'=> '', 'name' => '', 'category' => '');
+    $title = $description = $price = $user = $image = $category = '';
+    $errors = array('description' =>'', 'title' => '', 'price'=> '', 'user' => '', 'category' => '', 'image' => '');
 
     if(isset($_POST['submit'])){
 
-        //check name
-        if(empty($_POST['name'])){
-            $errors['name'] = 'a name is required <br />';
+        //check user
+        if(empty($_POST['user'])){
+            $errors['user'] = 'a user is required <br />';
         } else{
-            $name = $_POST['name'];
-            if(!preg_match('/^[a-zA-Z\s]+$/', $name)){
-                $errors['name'] = 'name must be letters and spaces only <br />';
+            $user = $_POST['user'];
+            if(!preg_match('/^[a-zA-Z\s]+$/', $user)){
+                $errors['user'] = 'user must be letters and spaces only <br />';
             }
         }
 
@@ -51,12 +51,12 @@
         }else{
             $title = mysqli_real_escape_string($link, $_POST['title']);
             $description = mysqli_real_escape_string($link, $_POST['description']);
-            $name = mysqli_real_escape_string($link, $_POST['name']);
+            $user = mysqli_real_escape_string($link, $_POST['user']);
             $price = mysqli_real_escape_string($link, $_POST['price']);
 
 
             //create sql
-            $sql = "INSERT INTO additem(title,description,name,price,image) VALUES('$title', '$description', '$name', '$price', '$NewImageName')";
+            $sql = "INSERT INTO additem(title,description,user,price,image) VALUES('$title', '$description', '$user', '$price', '$NewImageName')";
 
             //save to db and check
             if(mysqli_query($link, $sql)){
@@ -85,8 +85,8 @@
 
         <form class = "white" action = "add.php" method = "POST">
             <label>Your Name:</label>
-            <input type = "text" name = "name" value = "<?php echo htmlspecialchars($name) ?>">
-            <div class = "red-text"><?php echo $errors['name']; ?></div>
+            <input type = "text" name = "user" value = "<?php echo htmlspecialchars($user) ?>">
+            <div class = "red-text"><?php echo $errors['user']; ?></div>
             <br>
             <label>Product Title:</label>
             <input type = "text" name = "title" value = "<?php echo htmlspecialchars($title) ?>">

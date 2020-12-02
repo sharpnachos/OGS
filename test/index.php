@@ -27,25 +27,9 @@
             <h2 id="profile"><a href="profile.html">Profile</a></h2>
         </header>
         <aside>
-            <?php
-                if(array_key_exists('button1', $_POST)) { 
-                    button1(); 
-                } 
-            else if(array_key_exists('button2', $_POST)) { 
-                button2(); 
-            } 
-        function button1() { 
-            echo "This is Button1 that is selected"; 
-        } 
-        function button2() { 
-            echo "This is Button2 that is selected"; 
-        } 
-    ?> 
             <ul>
                 <li><a href="category.html">Clothing</a></li>
-                <!--WORST CASE
-                    <li><a href="hard_code_cat.php">Appliances</a></li>-->
-                <li><input type="submit" name="insert" value="Appliances" onclick="populate()"/></li>
+                <li><a href="hard_code_cat.php">Appliances</a></li>
                 <li><a href="category.html">Home</a></li>
                 <li><a href="category.html">Toys</a></li>
                 <li><a href="category.html">Electronics</a></li>

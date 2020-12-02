@@ -81,7 +81,7 @@
             //save to db and check
             if(mysqli_query($link, $sql)){
                 //success
-                header('Location: ../index.html');
+                header('Location: ../index.php');
             }else{
                 echo 'query error: ' . mysqli_error($link);
             }

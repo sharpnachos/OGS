@@ -1,12 +1,12 @@
 <?php 
 	include('config.php');
-	// write query for all pizzas
+	// write query 
 	$sql = 'SELECT title, price, user, image FROM additem ORDER BY created_at';
     // get the result set (set of rows)
 	$result = mysqli_query($link, $sql);
 	// fetch the resulting rows as an array
 	$items = mysqli_fetch_all($result, MYSQLI_ASSOC);
-	// free the $result from memory (good practise)
+	// free the $result from memory
     mysqli_free_result($result);
 ?>
 
@@ -15,7 +15,7 @@
     <head>
         <title>Online Garage Sale</title>
         <link rel="stylesheet" href="css/style.css">
-        <!--Favicon-->
+        
     </head>
     <body>
         <header>
